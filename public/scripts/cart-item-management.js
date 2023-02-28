@@ -2,7 +2,7 @@ const cartItemUpdateFormElements = document.querySelectorAll(
     '.cart-item-management'
   );
   const cartTotalPriceElement = document.getElementById('cart-total-price');
-  const cartBadgeElements = document.querySelectorAll('.nav-items .badge');
+  const cartBadgeElements = document.querySelectorAll('.nav-items .badge1');
   
   async function updateCartItem(event) {
     event.preventDefault();

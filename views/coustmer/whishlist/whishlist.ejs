@@ -1,0 +1,18 @@
+<%- include('../../shared/includes/head', { pageTitle: 'Your WhishList' }) %>
+<link rel="stylesheet" href="/style/cart.css">
+<script src="/scripts/whishlist-item-management.js" defer></script>
+</head>
+<body>
+  <%- include('../../shared/includes/header') %>
+  <main>
+    <h1>Your WhishList</h1>
+    <ul id="whishlist-items">
+      <% for (const productDetail of productDetails) { %>
+        <li>
+          <%- include('includes/whishlist-item', {productDetail:productDetail }) %>
+        </li>
+      <% } %>
+    </ul>
+   
+  </main>
+<%- include('../../shared/includes/footer') %>

@@ -1,0 +1,11 @@
+<article class="cart-item" >
+    <div class="cart-item-info" >
+      <h2><%= productDetail.title %></h2>
+      <p>$<span class="whishlist-item-price"><%= productDetail.price %></span> </p>
+      <a class="btn btn-alt" href="/products/<%= productDetail.productId %>">View Details</a>
+
+        <a href="/whishlist/remove/product/<%= productDetail._id %>" class="btn whishlist-button" >Remove</a>
+    </div>
+  
+    
+  </article>
